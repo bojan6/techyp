@@ -5,10 +5,10 @@ files:
     destination: /var/www/awstechyp/
 hooks:
   BeforeInstall:
-    - location: deploy/before_install
+    - location: TechypPHP/Deploy/before_install
       timeout: 300
       runas: ubuntu
   AfterInstall:
-    - location: deploy/restart_server
+    - location: TechypPHP/Deploy/restart_server
       timeout: 300
       runas: ubuntu
